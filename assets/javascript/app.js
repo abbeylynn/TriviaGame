@@ -1,23 +1,38 @@
 $(document).ready(function(){
 
-	var time = 0;
+	var time = 200;
+	var intervalId;
 	var correctAnswers = 0;
 	var incorrectAnswers = 0;
 	var unansweredQuestions = 0;
 	var questions
 
-	$(".question-page").hide();
-	$(".answer-page").hide();
+		$(".question-page").hide();
+		$(".answer-page").hide();
 
 	$("#start").on("click", function() {
-			$(".start-page").hide();
-			$(".question-page").show();
-			$(".answer-page").hide();
-		//$(".start-page").replaceWith($(".question-page"));
-	})
-//title page - when start button is clicked, hide start page, show question page div
+		$(".start-page").hide();
+		$(".question-page").show();
+		$(".answer-page").hide();
+	});
+
+	function run() {
+    intervalId = setInterval(decrement, 1000);
+   }
+
+  function decrement() {
+    time--;
+    $("#countDown").html(time);
+  }
+
+  run();
+
+
+      //  Once number hits zero...
+      //if (time) === 0)
 
 //when question page loads, timer starts
+
 //set up timer
 	//countdown from x seconds
 	//if timer runs out, move to answer page
@@ -38,4 +53,4 @@ $(document).ready(function(){
 
    //restart button (back to question page)
 
-	  });
+});
