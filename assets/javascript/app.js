@@ -14,6 +14,7 @@ $(document).ready(function(){
 		$(".start-page").hide();
 		$(".question-page").show();
 		$(".answer-page").hide();
+		run();
 	});
 
 	function run() {
@@ -25,16 +26,14 @@ $(document).ready(function(){
     $("#countDown").html(time);
   }
 
-  run();
+
 
 
       //  Once number hits zero...
       //if (time) === 0)
 
-//when question page loads, timer starts
 
 //set up timer
-	//countdown from x seconds
 	//if timer runs out, move to answer page
 
 //for each question
