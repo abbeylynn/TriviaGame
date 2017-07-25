@@ -1,8 +1,10 @@
 body {
-	background:lightyellow;
+	background-image: url("../images/thecontest.jpg");
 }
 
 .container {
 	background:white;
 	align-self: center;
+	height:1200px;
+	width:60%;
 }

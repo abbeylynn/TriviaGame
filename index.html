@@ -4,119 +4,129 @@
 
 <head>
 
- 	<title>Trivia Game</title>
+  <title>Trivia Game</title>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
- 
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body>
 
 
-	<div class="container">
+  <div class="container">
 
-			<div class="row">
-			<div class="col-md-8" id="page-header">
-			<h1>Trivia Game</h1>
-			</div>
-			</div>
+    <div class="row">
+      <div class="col-md-10" id="page-header">
+        <h1>Trivia Game</h1>
+      </div>
+    </div>
 
-			<div class="start-page">
-			<button id="start">Start!</button>
-			</div>
+    <div class="start-page">
+      <button id="start">Start!</button>
+    </div>
 
-			<div class= "question-page">
+    <div class="question-page">
 
-			<div class="row">
-			<div class="col-md-8" id="timer">
-			<p>Time Remaining: <span id="countDown"></span></p>
-			</div>
-			</div>
+      <div class="row">
+        <div class="col-md-10" id="timer">
+          <p>Time Remaining: <span id="countDown"></span></p>
+        </div>
+      </div>
 
-			<div class="row">
-			<div class="col-md-8" id="questions">
-<p>Every week the TV Guide comes to Chandler and Joey's apartment. What name appears on the address label?</p>
-<label class="radio-inline"><input type="radio" name="optradio">Chandler Bing</label>
-<label class="radio-inline"><input type="radio" name="optradio">John Doe</label>
-<label class="radio-inline"><input type="radio" name="optradio">Ms Chanandler Bong</label>
-<label class="radio-inline"><input type="radio" name="optradio">Joey Tribiani</label>
+      <div class="row">
+        <div class="col-md-10" id="questions">
+          <p>Every week the TV Guide comes to Chandler and Joey's apartment. What name appears on the address label?</p>
+          <label class="radio-inline"><input type="radio" name="question1">Chandler Bing</label>
+          <label class="radio-inline"><input type="radio" name="question1">John Doe</label>
+          <label class="radio-inline"><input type="radio" name="question1" id="right-answer">Ms Chanandler Bong</label>
+          <label class="radio-inline"><input type="radio" name="question1">Joey Tribiani</label>
 
-<hr>
+          <hr>
 
-<p>What is Monica's biggest pet peeve?</p>
-<label class="radio-inline"><input type="radio" name="optradio">Animals dressed as humans.</label>
-<label class="radio-inline"><input type="radio" name="optradio">Dirty dishes left in the sink.</label>
-<label class="radio-inline"><input type="radio" name="optradio">Creaky floors.</label>
-<label class="radio-inline"><input type="radio" name="optradio">People that are too tall.</label>
+          <p>What is Monica's biggest pet peeve?</p>
+          <label class="radio-inline"><input type="radio" name="question2" id="right-answer2">Animals dressed as humans.</label>
+          <label class="radio-inline"><input type="radio" name="question2">Dirty dishes left in the sink.</label>
+          <label class="radio-inline"><input type="radio" name="question2">Creaky floors.</label>
+          <label class="radio-inline"><input type="radio" name="question2">People that are too tall.</label>
 
-<hr>
+          <hr>
 
-<p>According to Chandler, what phenomenon scares the bejesus out of him?</p>
-<label class="radio-inline"><input type="radio" name="optradio">El Nino</label>
-<label class="radio-inline"><input type="radio" name="optradio">Michael Flatley, Lord of the Dance</label>
-<label class="radio-inline"><input type="radio" name="optradio">Emojis</label>
-<label class="radio-inline"><input type="radio" name="optradio">Lady Gaga's meat dress</label>
+          <p>According to Chandler, what phenomenon scares the bejesus out of him?</p>
+          <label class="radio-inline"><input type="radio" name="question3">El Nino</label>
+          <label class="radio-inline"><input type="radio" name="question3" id="right-answer3">Michael Flatley, Lord of the Dance</label>
+          <label class="radio-inline"><input type="radio" name="question3">Emojis</label>
+          <label class="radio-inline"><input type="radio" name="question3">Lady Gaga's meat dress</label>
 
-<hr>
+          <hr>
 
-<p>What was Monica's nickname when she was a field hockey goalie?</p>
-<label class="radio-inline"><input type="radio" name="optradio">The Terminator</label>
-<label class="radio-inline"><input type="radio" name="optradio">HarMonica</label>
-<label class="radio-inline"><input type="radio" name="optradio">Batman</label>
-<label class="radio-inline"><input type="radio" name="optradio">Big Fat Goalie</label>
+          <p>What was Monica's nickname when she was a field hockey goalie?</p>
+          <label class="radio-inline"><input type="radio" name="question4">The Terminator</label>
+          <label class="radio-inline"><input type="radio" name="question4">HarMonica</label>
+          <label class="radio-inline"><input type="radio" name="question4">Batman</label>
+          <label class="radio-inline"><input type="radio" name="question4" id="right-answer4">Big Fat Goalie</label>
 
-<hr>
+          <hr>
 
-<p>What is the name of Chandler's father's Las Vegas all-male burlesque?</p>
-<label class="radio-inline"><input type="radio" name="optradio">Bing's Boys</label>
-<label class="radio-inline"><input type="radio" name="optradio">Viva Las Gaygas</label>
-<label class="radio-inline"><input type="radio" name="optradio">Pretty Fly For a White Guy</label>
-<label class="radio-inline"><input type="radio" name="optradio">Burlesque</label>
+          <p>What is the name of Chandler's father's Las Vegas all-male burlesque?</p>
+          <label class="radio-inline"><input type="radio" name="question5">Bing's Boys</label>
+          <label class="radio-inline"><input type="radio" name="question5" id="right-answer5">Viva Las Gaygas</label>
+          <label class="radio-inline"><input type="radio" name="question5">Pretty Fly For a White Guy</label>
+          <label class="radio-inline"><input type="radio" name="question5">Burlesque</label>
 
-<hr>
+          <hr>
 
-<p>What is Joey's favorite food?</p>
-<label class="radio-inline"><input type="radio" name="optradio">Pizza</label>
-<label class="radio-inline"><input type="radio" name="optradio">Meatballs</label>
-<label class="radio-inline"><input type="radio" name="optradio">Turkey</label>
-<label class="radio-inline"><input type="radio" name="optradio">Sandwiches</label>
+          <p>What is Joey's favorite food?</p>
+          <label class="radio-inline"><input type="radio" name="question6">Pizza</label>
+          <label class="radio-inline"><input type="radio" name="question6">Meatballs</label>
+          <label class="radio-inline"><input type="radio" name="question6">Turkey</label>
+          <label class="radio-inline"><input type="radio" name="question6" id="right-answer6">Sandwiches</label>
 
-<hr>
+          <hr>
 
-<p>Joey had an imaginary friend. What is his name and occupation?</p>
-<label class="radio-inline"><input type="radio" name="optradio">Maurice, Space Cowboy</label>
-<label class="radio-inline"><input type="radio" name="optradio">Captain Jack, Pirate</label>
-<label class="radio-inline"><input type="radio" name="optradio">Mr. Moonman, Astronaut</label>
-<label class="radio-inline"><input type="radio" name="optradio">Buddy, Professional Hugger</label>
+          <p>Joey had an imaginary friend. What is his name and occupation?</p>
+          <label class="radio-inline"><input type="radio" name="question7" id="right-answer7">Maurice, Space Cowboy</label>
+          <label class="radio-inline"><input type="radio" name="question7">Captain Jack, Pirate</label>
+          <label class="radio-inline"><input type="radio" name="question7">Mr. Moonman, Astronaut</label>
+          <label class="radio-inline"><input type="radio" name="question7">Buddy, Professional Hugger</label>
 
-<hr>
+          <hr>
 
-<p>EWhat is Rachel's favorite movie (not the movie she says is her favorite)?</p>
-<label class="radio-inline"><input type="radio" name="optradio">Dangerous Liasons</label>
-<label class="radio-inline"><input type="radio" name="optradio">Casablanca</label>
-<label class="radio-inline"><input type="radio" name="optradio">Weekend at Bernie's</label>
-<label class="radio-inline"><input type="radio" name="optradio">Oklahoma</label>
+          <p>What is Rachel's favorite movie (not the movie she says is her favorite)?</p>
+          <label class="radio-inline"><input type="radio" name="question8">Dangerous Liasons</label>
+          <label class="radio-inline"><input type="radio" name="question8">Casablanca</label>
+          <label class="radio-inline"><input type="radio" name="question8" id="right-answer8">Weekend at Bernie's</label>
+          <label class="radio-inline"><input type="radio" name="question8">Oklahoma</label>
 
-<hr>
+          <hr>
 
-<button id="start">Done!</button>
+          <button id="done">Done!</button>
 
-	</div>
-	</div>
-	</div>
+        </div>
+      </div>
+    </div>
 
 
-	<div class= "answer-page">
-	<p>placeholder text</p>
-	</div>
+    <div class="answer-page">
+      <p>Correct Answers:
+        <div id="correct-answers"></div>
+      </p>
+    </div>
 
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="assets/javascript/app.js"></script>
-  
+    <div class="answer-page">
+      <p>Wrong Answers:
+        <div id="wrong-answers"></div>
+      </p>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+
 </body>
+
 </html>
