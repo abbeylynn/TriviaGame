@@ -9,6 +9,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -21,25 +23,38 @@
   <div class="container">
 
     <div class="row">
-      <div class="col-md-10" id="page-header">
-        <h1>Trivia Game</h1>
+      <div class="col-md-12" id="page-header">
+        <h1>Friends Trivia Game - The Contest</h1>
+        <hr>
+
       </div>
     </div>
 
     <div class="start-page">
-      <button id="start">Start!</button>
+
+        <p>For Friends obsessives, the episode titled, "The One With the Embryos" is unofficially known as "The One With the Trivia Game."
+        <p>After Joey and Chandler correctly predict everything in Rachel's shopping bag and make fun of Monica, who Joey knows is wearing "old lady underpants" because it's laundry day, Monica's ever-burning competitive fire leads to an epic trivia game to prove that there's no way the guys know Monica and Rachel better than the girls know Joey and Chandler. The residents of apartments 19 and 20 are soon engaged in a battle for the ages with ever-escalating stakes. </p>
+        <p><strong> Are you fan enough to beat Monica, Rachel, Joey, Chandler, and Ross at their own game? Could you BE any more excited to test your knowledge of Friends? Step up and see if you can save Monica and Rachel's apartment.</strong></p>
+        <hr>
+
+        <button id="start">Start!</button>
+
+        <hr>
+
+        <img src="assets/images/thecontest.jpg" id="thecontest">
+
     </div>
 
     <div class="question-page">
 
       <div class="row">
-        <div class="col-md-10" id="timer">
-          <p>Time Remaining: <span id="countDown"></span></p>
+        <div class="col-md-12" id="timer">
+          <p><strong>Time Remaining: <span id="countDown"></span></strong></p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-10" id="questions">
+        <div class="col-md-12" id="questions">
           <p>Every week the TV Guide comes to Chandler and Joey's apartment. What name appears on the address label?</p>
           <label class="radio-inline"><input type="radio" name="question1">Chandler Bing</label>
           <label class="radio-inline"><input type="radio" name="question1">John Doe</label>
@@ -121,6 +136,14 @@
       <p>Wrong Answers:
         <div id="wrong-answers"></div>
       </p>
+      <hr>
+
+      <button id="play-again">Play Again</button>
+
+      <hr>
+
+      <img src="assets/images/friends.jpg" id="poster">
+
     </div>
 
 

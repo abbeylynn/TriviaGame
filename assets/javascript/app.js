@@ -92,4 +92,10 @@ $(document).ready(function() {
     $(".question-page").hide();
     $(".answer-page").show();
   }
+
+  $("#play-again").on("click", function() {
+    $(".start-page").show();
+    $(".question-page").hide();
+    $(".answer-page").hide();
+  });
 });
